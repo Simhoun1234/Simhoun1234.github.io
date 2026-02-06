@@ -1,164 +1,198 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>심 훈 홈페이지</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    div.box{border: 1px solid red; color: blue; font-size: 20px;}
-    img.half{width:30%; height:auto;}
-    input{width: 50px;height: 30px;}
-    #name{width: 250px; height: 36px; font-size: 16px;}
-    table {border-collapse: collapse;}
-    th, td {border: 1px solid black;padding: 6px 12px; text-align: center;}
-    tr:nth-child(even){background-color:#f2f2f2;}
-    tr:nth-child(odd){background-color:#ffffff;}
-    tr:hover{background-color: #ffeb3b; cursor:pointer;}
-    #form_container{display:inline-block; width:fit-content; border: 1px solid black; padding:10px;}
-    label{display:inline-block; width:50px; text-align:right}
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>심 훈 홈페이지</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+<style>
+/* ===== 공통 스타일 ===== */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
 
-        nav {
-            background-color: #34495e;
-            padding: 10px;
-            text-align: center;
-        }
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav {
+  background-color: #34495e;
+  padding: 10px;
+  text-align: center;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+nav a:hover {
+  text-decoration: underline;
+}
 
-        section {
-            margin-bottom: 40px;
-        }
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
 
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== 계산기 ===== */
+input {
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+}
+
+/* ===== 로그인 박스 핵심 ===== */
+#form_container {
+  display: inline-block;        /* 폼 크기만큼만 */
+  border: 1px solid black;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+#form_container input {
+  width: 180px;                 /* 아이디/암호만 줄임 */
+  height: 32px;
+  font-size: 16px;
+}
+
+#form_container > form > div {
+  margin-bottom: 10px;
+}
+
+#form_container label {
+  display: inline-block;
+  width: 60px;
+}
+
+/* ===== 기타 ===== */
+img.half {
+  width: 30%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 6px 12px;
+  text-align: center;
+}
+
+tr:nth-child(even){background:#f2f2f2;}
+tr:nth-child(odd){background:#fff;}
+tr:hover{background:#ffeb3b;}
+</style>
+
 <script>
- function calculate()
- {
- //console.log('계산을 시작합니다');
-  a=document.getElementById("n1").value;
-  b=document.getElementById("n2").value;  
-  a=parseInt(a)
-  b=parseInt(b)
-  c=a+b;
-  exp=`${a}+${b}=${c}`
-  console.log(exp)
-  document.getElementById("n3").value = c
+function calculate() {
+  let a = parseInt(document.getElementById("n1").value);
+  let b = parseInt(document.getElementById("n2").value);
+  document.getElementById("n3").value = a + b;
   document.getElementById("myDiv").style.border = "3px solid red";
- }
+}
 </script>
 </head>
+
 <body>
- <div id="myDiv">
-  <input type="text" id="n1" name="n1"> +
-  <input type="text" id="n2" name="n2"> =
-  <input type="text" id="n3" name="n3"> 
- <button type="button" onclick="calculate();">계산</button>
- </div>
- <div id="form_container">
+
+<!-- 계산기 -->
+<div id="myDiv">
+  <input id="n1"> +
+  <input id="n2"> =
+  <input id="n3">
+  <button type="button" onclick="calculate()">계산</button>
+</div>
+
+<!-- ✅ 로그인 폼만 감싸는 박스 -->
+<div id="form_container">
   <form>
     <div>
-    <label for="uid">아이디</label>
-    <input type="text" name="uid" id="uid">
-  </div>
-  <div>
-    <label for="pwd">암호</label>
-    <input type="password" name="pwd" id="pwd"> 
-  </div>
-  <div>
-    <button type="submit">로그인</button>
-  </div>
- </form>
-  <div>
-    <header>
-        <h1>안녕하세요 👋</h1>
-        <p>이곳은 제 개인 홈페이지입니다</p>
-    </header>
-    <nav>
-        <a href="#about">소개</a>
-        <a href="#projects">프로젝트</a>
-        <a href="#contact">연락처</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>🙋‍♂️ 소개</h2>
-            <a href="#bottom">맨 아래로 이동</a>
-            <p>
-               여기는 고양이를 소개하는 곳입니다.
-            </p>
-        </section>
- <form>
-  <label for="name">이름:</label>
-  <input type="text" id="name" name="name">
-  <textarea rows=4 name="text" cols="30"></textarea>
-  <button type="submit">제출</button>
- </form>
-    <img src="image/hampter.jpg" alt="햄스터" class="half">
-    <img src="image/ccat.jpg" alt="고양이" class="half">
-    <img src="image/hampter.jpg" alt="햄스터" class="abc">
-        <section id="projects">
-            <h2>💻 프로젝트</h2>
-            <ul>
-                <li>개인 홈페이지 만들기</li>
-                <li>포트폴리오 사이트</li>
-                <li>웹 애플리케이션 실습</li>
-            </ul>
-        </section>
-    <table>
-        <tr><th>이름</th><th>나이</th></tr>
-        <tr><td>심영훈</td><td>27</td></tr>
-        <tr><td>심성훈</td><td>27</td></tr>
-        <tr><td>심정훈</td><td>27</td></tr>
-        <tr><td>심경훈</td><td>27</td></tr>
-        <tr><td>심명훈</td><td>27</td></tr>
-    </table>
-<div class ="box">레이아웃 박스</div>
-<span style="color:red">강조 텍스트</span>  
-        <section id="contact">
-            <a href="#top">맨 위로 이동</a>
-            <h2>📧 연락처</h2>
-            <p>Email: houn0915@gmail.com</p>
-            <p>Phone Number: 010-9974-8432</p>
-            <p>GitHub: <a href="https://github.com/" target="_blank">https://github.com/</a></p>
-        </section>
-    </main>
+      <label for="uid">아이디</label>
+      <input type="text" id="uid">
+    </div>
+    <div>
+      <label for="pwd">암호</label>
+      <input type="password" id="pwd">
+    </div>
+    <div>
+      <button type="submit">로그인</button>
+    </div>
+  </form>
+</div>
 
-    <footer>
-        <p>© 2026 내 이름. All rights reserved.</p>
-        <div id="bottom">여기가 맨 아래입니다.</div>
-    </footer>
+<header>
+  <h1>안녕하세요 👋</h1>
+  <p>이곳은 제 개인 홈페이지입니다</p>
+</header>
+
+<nav>
+  <a href="#about">소개</a>
+  <a href="#projects">프로젝트</a>
+  <a href="#contact">연락처</a>
+</nav>
+
+<main>
+<section id="about">
+  <h2>소개</h2>
+  여기는 고양이를 소개하는 곳입니다.
+</section>
+
+<img src="image/hampter.jpg" class="half">
+<img src="image/ccat.jpg" class="half">
+
+<section id="projects">
+  <h2>프로젝트</h2>
+</section>
+
+<table> <tr><th>이름</th><th>나이</th></tr> 
+<tr><td>심영훈</td><td>27</td></tr> 
+<tr><td>심성훈</td><td>27</td></tr> 
+<tr><td>심정훈</td><td>27</td></tr> 
+<tr><td>심경훈</td><td>27</td></tr> 
+<tr><td>심명훈</td><td>27</td></tr>
+</table> 
+
+<div class ="box">레이아웃 박스
+</div> <span style="color:red">강조 텍스트
+</span> <section id="contact"> <a href="#top">맨 위로 이동</a> 
+<h2>📧 연락처</h2> <p>Email: houn0915@gmail.com</p> 
+<p>Phone Number: 010-9974-8432</p> <p>GitHub: 
+<a href="https://github.com/" target="_blank">
+https://github.com/</a></p> </section> </main>
+
+<section id="contact">
+<h2>연락처</h2>
+</section>
+</main>
+
+<footer>
+  © 2026
+</footer>
+
+</body>
+</html>
 </body>
 </html>
 
