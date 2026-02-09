@@ -22,6 +22,10 @@ th, td {border: 1px solid black; padding: 6px 12px; text-align: center;}
 tr:nth-child(even){background:#f2f2f2;}
 tr:nth-child(odd){background:#fff;}
 tr:hover{background:#ffeb3b;}
+#form_container {display: inline-block; border: 1px solid black; padding: 15px; margin: 20px 0;}
+#form_container input {width: 180px; height: 32px; font-size: 16px;}
+#form_container > form > div {margin-bottom: 10px;}
+#form_container label {display: inline-block; width: 60px;}
 </style>
 <script>
 function calculate() {let a = parseInt(document.getElementById("n1").value);let b = parseInt(document.getElementById("n2").value);document.getElementById("n3").value = a + b;document.getElementById("myDiv").style.border = "3px solid red";}
