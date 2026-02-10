@@ -1,1 +1,7 @@
-
+.calendar{border-collapse: collapse; margin: 0 auto; width: 400px;}
+ .calendar th,
+ .calendar th{background-color: #f2f2f2; font-weight:bold;}
+ .calendar td{border: 1px solid #ccc; width: 14.2%; height: 60px; text-align: center; vertical-align: middle;}
+ .sun{color: red;}
+ .sat{color: blue;}
+ .holiday{color:red; font-weight: bold; background-color: #ffecec;}
