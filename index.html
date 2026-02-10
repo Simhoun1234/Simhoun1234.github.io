@@ -25,6 +25,11 @@ tr:hover{background:#ffeb3b;}
 #form_container input {width: 180px; height: 32px; font-size: 16px;}
 #form_container > form > div {margin-bottom: 10px;}
 #form_container label {display: inline-block; width: 60px;}
+table {border-collapse: collapse;width: 400px;text-align: center;}
+th {background-color: #eee;}
+td {height: 50px;}
+td:first-child {color: red;}
+td:last-child {color: blue;}
 </style>
 <script>
 function calculate() {let a = parseInt(document.getElementById("n1").value);let b = parseInt(document.getElementById("n2").value);document.getElementById("n3").value = a + b;document.getElementById("myDiv").style.border = "3px solid red";}
