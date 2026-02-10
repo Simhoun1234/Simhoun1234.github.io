@@ -31,6 +31,7 @@ td {height: 50px;}
 td:first-child {color: red;}
 td:last-child {color: blue;}
 .red {color: red;}
+.calendar {border: 2px solid black;}
 </style>
 <script>
 function calculate() {let a = parseInt(document.getElementById("n1").value);let b = parseInt(document.getElementById("n2").value);document.getElementById("n3").value = a + b;document.getElementById("myDiv").style.border = "3px solid red";}
@@ -168,7 +169,7 @@ email=document.getElementById('email').value; if(email.includes('.')){alert('이
     <td>25</td>
   </tr>
 </table>
-<table border="1" cellspacing="0" cellpadding="10">
+<table clsss="calendar" border="1" cellspacing="0" cellpadding="10">
   <caption>2025년 2월</caption>
   <tr>
     <th>일</th>
