@@ -1,5 +1,5 @@
-.Hello{border: 2px solid black; padding: 4px; color: red; font-weight: bold; font-size: 20px;}
-.World{border: 2px solid black; padding: 4px; background-color: yellow;}
+.Hello{display: inline-block; border: 2px solid black; padding: 4px; color: red; font-weight: bold; font-size: 20px;}
+.World{display: inline-block; border: 2px solid black; padding: 4px; background-color: yellow;}
  body{font-family: Arial, sans-serif; text-align: center;}
  body{background-color: #f0f0f0; color: #333;}
 .box{marhin: 20px; padding: 15px}
