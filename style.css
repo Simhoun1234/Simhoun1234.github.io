@@ -1,4 +1,4 @@
- h1{border: 2px solid black; padding: 10px; margin: 20px; width: fit-content;}
+ h1{border: 2px solid black; padding: 10px 20px; width: fit-content; margin: 20px auto;}
 .Hello{display: inline-block; border: 2px solid black; padding: 4px; color: red; font-weight: bold; font-size: 20px;}
 .World{display: inline-block; border: 2px solid black; padding: 4px; background-color: yellow; font-size: 20px;}
  body{font-family: Arial, sans-serif; text-align: center;}
