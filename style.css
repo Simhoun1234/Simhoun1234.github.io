@@ -1,4 +1,4 @@
- h1{border: 2px solid black; padding: 10px 20px; width: fit-content; margin: 20px auto;}
+ h1{margin-bottom: 20px; border-bottom: 3px double black;}
  div{display: inline-block; width: 50px; border: 1px solid black; padding: 20px;}
  #div2{background-color:#ffff00; color:pink;}
  body{font-family: Arial, sans-serif; text-align: center;}
