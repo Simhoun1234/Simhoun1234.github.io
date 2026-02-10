@@ -1,5 +1,8 @@
  body{font-family: Arial, sans-serif; text-align: center;}
  body{background-color: #f0f0f0; color: #333;}
+<div>
+.box{marhin: 20px; padding: 15px}
+</div>
  h2{margin-bottom: 10px;}
  .calendar{border-collapse: collapse; margin: 0 auto; width: 400px;}
  .calendar th,
@@ -8,3 +11,4 @@
  .sun{color: red;}
  .sat{color: blue;}
  .holiday{color:red; font-weight: bold; background-color: #ffecec;}
+ h1{color: #007bff; background-color: rgba(0, 0, 0, 0.5)}
