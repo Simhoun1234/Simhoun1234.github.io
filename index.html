@@ -26,12 +26,12 @@ tr:hover{background:#ffeb3b;}
 #form_container > form > div {margin-bottom: 10px;}
 #form_container label {display: inline-block; width: 60px;}
 table {border-collapse: collapse;width: 400px;text-align: center;}
-th {background-color: #eee;}
-td {height: 50px;}
-td:first-child {color: red;}
-td:last-child {color: blue;}
-.red {color: red;}
-.calendar {border: 2px solid black;}
+th{background-color: #eee;}
+td{height: 50px;}
+td:last-child{color: blue;}
+.sun{color: red;}
+.holiday{color:red; font-weight: bold; background-color: #ffecec;}
+.calendar{border: 2px solid black;}
 </style>
 <script>
 function calculate() {let a = parseInt(document.getElementById("n1").value);let b = parseInt(document.getElementById("n2").value);document.getElementById("n3").value = a + b;document.getElementById("myDiv").style.border = "3px solid red";}
@@ -169,17 +169,20 @@ email=document.getElementById('email').value; if(email.includes('.')){alert('이
     <td>25</td>
   </tr>
 </table>
-<table clsss="calendar" border="1" cellspacing="0" cellpadding="10">
-  <caption>2025년 2월</caption>
-  <tr>
-    <th>일</th>
-    <th>월</th>
-    <th>화</th>
-    <th>수</th>
-    <th>목</th>
-    <th>금</th>
-    <th>토</th>
-  </tr>
+<h2>2026년 2월</h2>
+ <table clsss="calendar">
+  <thead>
+    <tr> 
+     <th class="sun">일</th>
+     <th>월</th>
+     <th>화</th>
+     <th>수</th>
+     <th>목</th>
+     <th>금</th>
+     <th>토</th>
+   </tr>
+  </thead>
+ <tbody>
   <tr>
     <td>1</td>
     <td>2</td>
@@ -190,7 +193,7 @@ email=document.getElementById('email').value; if(email.includes('.')){alert('이
     <td>7</td>
   </tr>
   <tr>
-    <td>8</td>
+    <td class="sun">8</td>
     <td>9</td>
     <td>10</td>
     <td>11</td>
@@ -199,16 +202,16 @@ email=document.getElementById('email').value; if(email.includes('.')){alert('이
     <td>14</td>
   </tr>
   <tr>
-    <td>15</td>
-    <td class="red">16</td>
-    <td class="red">17</td>
-    <td class="red">18</td>
+    <td class="sun">15</td>
+    <td class="holiday">16</td>
+    <td class="holiday">17</td>
+    <td class="holiday">18</td>
     <td>19</td>
     <td>20</td>
     <td>21</td>
   </tr>
   <tr>
-    <td>22</td>
+    <td class="sun">22</td>
     <td>23</td>
     <td>24</td>
     <td>25</td>
