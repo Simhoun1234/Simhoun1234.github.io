@@ -30,7 +30,7 @@ th {background-color: #eee;}
 td {height: 50px;}
 td:first-child {color: red;}
 td:last-child {color: blue;}
-.calendar-wrap table {border-collapse: collapse;}
+.red {color: red;}
 </style>
 <script>
 function calculate() {let a = parseInt(document.getElementById("n1").value);let b = parseInt(document.getElementById("n2").value);document.getElementById("n3").value = a + b;document.getElementById("myDiv").style.border = "3px solid red";}
@@ -168,7 +168,6 @@ email=document.getElementById('email').value; if(email.includes('.')){alert('이
     <td>25</td>
   </tr>
 </table>
-  <div class="calendar-wrap">
 <table border="1" cellspacing="0" cellpadding="10">
   <caption>2025년 2월</caption>
   <tr>
@@ -208,9 +207,9 @@ email=document.getElementById('email').value; if(email.includes('.')){alert('이
     <td>15</td>
   </tr>
   <tr>
-    <td>16</td>
-    <td>17</td>
-    <td>18</td>
+    <td class="red">16</td>
+    <td class="red">17</td>
+    <td class="red">18</td>
     <td>19</td>
     <td>20</td>
     <td>21</td>
@@ -226,7 +225,6 @@ email=document.getElementById('email').value; if(email.includes('.')){alert('이
     <td></td>
   </tr>
 </table>
-  </div>
 <div class ="box">레이아웃 박스
 </div> <span style="color:red">강조 텍스트
 </span> <section id="contact"> <a href="#top">맨 위로 이동</a> 
