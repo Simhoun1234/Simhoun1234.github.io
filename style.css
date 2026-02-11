@@ -18,7 +18,7 @@
  a[href^="http"] {background-color: yellow;}
  a[href*="github"] {background-color: lightblue;}
  a[href$="abc.com"] {background-color: pink;}
- #home{background-color: blue;}
+ #home{color: blue;}
  #python{background-color: red;}
  #html{background-color: orange;}
  #css{background-color: yellow;}
