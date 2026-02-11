@@ -18,3 +18,10 @@
  a[href^="http"] {background-color: yellow;}
  a[href*="github"] {background-color: lightblue;}
  a[href$="abc.com"] {background-color: pink;}
+ #home{background-color: blue;}
+ #python{background-color: lightgreen;}
+ #html{background-color: red;}
+ #css{background-color: orange;}
+ #javascript{background-color: green;}
+ #google{background-color: yellow;}
+ #contact{background-color: purple;}
