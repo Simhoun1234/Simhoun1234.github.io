@@ -19,9 +19,9 @@
  a[href*="github"] {background-color: lightblue;}
  a[href$="abc.com"] {background-color: pink;}
  #home{background-color: blue;}
- #python{background-color: lightgreen;}
- #html{background-color: red;}
- #css{background-color: orange;}
+ #python{background-color: red;}
+ #html{background-color: orange;}
+ #css{background-color: yellow;}
  #javascript{background-color: green;}
- #google{background-color: yellow;}
+ #google{background-color: blue;}
  #contact{background-color: purple;}
