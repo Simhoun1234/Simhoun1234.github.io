@@ -4,7 +4,7 @@
  #div2{background-color:#ffff00; color:pink;}
  body{font-family: Arial, sans-serif; text-align: center;} 
  body{background-color: #f0f0f0; color: #333;}
-.box{display: inline-block; padding: 20px; margin: 20px; font-weight:border;}
+.box{background-color: #e0f7fa; background-image: url("winter.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center; display: inline-block; padding: 20px; margin: 20px; font-weight:border;}
  h2{margin-bottom: 10px;}
  .calendar{border-collapse: collapse; margin: 0 auto; width: 400px;}
  .calendar th,
