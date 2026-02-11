@@ -13,5 +13,5 @@
  .sun{color: red;}
  .sat{color: blue;}
  .holiday{color:red; font-weight: bold; background-color: #ffecec;}
- div#round{display:inline-block; width:200px; border: 1px solid black; border-radius: 100px; background-color:green;}
- div#round2{display:inline-block; width:200px; border: 1px solid black; border-radius: 100px; background-color:green;}
+ div#round{display:inline-block; height: 100px; width:200px; border: 1px solid black; border-radius: 50%; background-color:green; text-align: center; line-height: 100px; font-weight: bold; margin: 0 10px;}
+ div#round2{display:inline-block; height: 100px; width:200px; border: 1px solid black; border-radius: 50%; background-color:green; text-align: center; line-height: 100px; font-weight: bold; margin: 0 10px;}
