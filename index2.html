@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>심 훈 홈페이지</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <style>
+ div > div:nth-child(1) > a:hover{color: blue;}
+ input[type="text"]:focus{outline: 2px solid blue;}
+ nav a:nth-child(1){background-color: red;}
+ nav a:nth-child(2){background-color: orange;}
+ nav a:nth-child(3){background-color: yellow;}
+ nav a:nth-child(4){background-color: green;}
+ nav + a{background-color: blue;}
+ p + a{background-color: purple;}
+ a#a1:hover::before{content: "👉";}
+ a#a1:hover::after{content: "👈";}
+ .box{display: inline-block; padding: 20px; margin: 20px; border: 2px solid black}
+ .box2{background-color: #e0f7fa; background-image: url("winter.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center;}
+ </style>
+ <body>
+ <header>
+  <a href="https://simhoun1234.github.io/" class="title-link"><h1>심 훈 홈페이지</h1></a>
+ <div class="container">
+  <div class="box" id="div3">Hello</div>
+  <div class="box" id="div2">World!</div>
+ </div>
+ <div id="round">안녕</div>
+ <div id="round2">하세요</div>
+ <ul>
+  <li><a href="http://google.com">Google</a></li>
+  <li><a href="https://github.com">Github</a></li>
+  <li><a href="https://abc.com">ABC News network</a></li>
+</ul>
+<div>
+ <div>
+  <a id="a1">Home</a>
+</div>
+<div>
+ 아이디<input type="text" name="uid">
+</div>
+ <p>
+  <nav>
+   <a>Python</a>
+   <a>html</a>
+   <a>css</a>
+   <a>JavaScript</a>
+  </nav>
+  <a>Google</a>
+ </p>
+ <a>Contact</a>
+ <div>
+ <img src="image/winter.jpg" class="box2">
+ </div>
+  </header>
+ </body>
+</html>
