@@ -1,6 +1,5 @@
  body{text-align:center;}
 .container{display:block; width: fit-content; margin: 0 auto; border: none; padding: 0}
- h1{background-color: lightred; margin-bottom: 20px; border-bottom: 3px double black; width:fit-content; margin: 0 auto}
  #div2{background-color:#ffff00; color:pink;}
  #div3{background-color:#ffc0cb; color:black;}
  body{font-family: Arial, sans-serif; text-align: center;} 
