@@ -6,14 +6,15 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
  <style>
- .container{display: flex; justify-content: center; align-items: center; height: 300px; gap: 10px;}
- .item{background: #d0ebff; padding: 20px; flex: 1; text-align: center;}
- .top-line,.bottom-line{height: 40px; border: 4px solid #000; box-sizing: border-box;}
- .outer{display: flex; flex-direction: column; width: 800px; height: 450px; border: 6px solid #000; margin: 40px auto; padding: 60px 40px; box-sizing: border-box;}
- .inner{flex: 1; border: 4px solid #000; margin: 10px 0;}
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+ .container{display: flex; flex-direction: column; height: 100vh; padding: 10px; gap: 5px}
+ .box{border: 2px solid #333; display: flex; align-items: center; justify-content: center; font-weight: bold; background-color:}
+  
  </style>
   <header>
  </header>
+</head>
+ <body>
   <div class="container">
    <header class="box">상단(Header)</header>
   <div class="middle-group">
@@ -21,6 +22,7 @@
    <main class="box center">중앙(Main - 나만 늘어남)</main>
    <aside class="box side">우측(Aside)</aside>
   </div>
+  <div>
    <footer class="box">하단(Footer)</footer>
   </div>
  </body>
