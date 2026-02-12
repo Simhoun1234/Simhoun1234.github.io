@@ -15,9 +15,9 @@
  .holiday{color:red; font-weight: bold; background-color: #ffecec;}
  div#round{display:inline-block; height: 100px; width:100px; border: 1px solid black; border-radius: 50%; background-color:green; text-align: center; line-height: 100px; font-weight: bold; margin: 0 10px;}
  div#round2{display:inline-block; height: 100px; width:100px; border: 1px solid black; border-radius: 50%; background-color:green; text-align: center; line-height: 100px; font-weight: bold; margin: 0 10px;}
- a[href^="http"] {background-color: yellow;}
- a[href*="github"] {background-color: lightblue;}
- a[href$="abc.com"] {background-color: pink;}
+ a[href^="http"]{background-color: yellow;}
+ a[href*="github"]{background-color: lightblue;}
+ a[href$="abc.com"]{background-color: pink;}
  div > div:nth-child(1) > a {color: blue;}
  nav a:nth-child(1){background-color: red;}
  nav a:nth-child(2){background-color: orange;}
